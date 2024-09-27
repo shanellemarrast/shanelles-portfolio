@@ -1,0 +1,148 @@
+.name-header{
+    font-family: "Moo Lah Lah", sans-serif;
+    font-style: normal;
+    font-size: 96px;
+    height: 155px;
+    width: 475px;
+    color: #E49AB0;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    transform: translateY(-125px);
+    margin: 15px;
+}
+
+/* Menu Button */
+
+.menubutton {
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.bar {
+    height: 1px;
+    background-color: #E49AB0;
+    margin-bottom: 6px;
+    transition: 0.4s;
+    align-self: flex-end;
+}
+
+.bar1 {
+    width: 25px;
+}
+
+.bar2 {
+    width: 15px;
+}
+
+/* Menu */
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #E49AB0;
+    transition: right 0.4s;
+    z-index: 3;
+    padding-top: 40px;
+}
+
+.vertical-menu {
+    width: 250px;
+    height: 50%;
+    overflow-y: auto;
+}
+
+.vertical-menu a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: #0B2027;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+  }
+
+.menu.open {
+    right: 0;
+}
+
+.menubutton.open .bar1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+    width: 25px;
+    background-color: #0B2027;
+}
+
+.menubutton.open .bar2 {
+    transform: rotate(45deg);
+    width: 25px;
+    background-color: #0B2027;
+}
+
+/* Professional Pic */
+
+.profpic {
+    width: 250px;
+    height: 250px;
+    border-radius: 500px;
+    outline-style: dotted;
+    outline-width: 5px;
+    outline-color: #8B9D83;
+    position: absolute;
+}
+
+.profpicdiv{
+    position: fixed;
+    right: 455px;
+    top: 150px;
+}
+
+/* Home Page */
+
+.top-div {
+    height: 110px;
+    width: 10px;
+}
+
+.bottom-div {
+    height: 110px;
+    width: 10px;
+}
+
+/* Basic Stylings */
+
+body {
+    background: #0B2027;
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #8B9D83;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    color: #E49AB0;
+    text-align: center;
+}
+
+/* Gradient Text */
+
+.gradient-text {
+    background: linear-gradient(to right, #E49AB0, #7692FF);
+    -webkit-background-clip: text;
+        background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
